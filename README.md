@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project
+# Instancia Ec2 con AWS CDK  
 
-This is a blank project for CDK development with TypeScript.
+## Requisitos Previos
+- Tener node js
+- Tener aws cdk y cli
+- Congurar aws cli(tener cuenta con acces key) y ingresar en el equipo local
+- Tener una clave ssh y agregarla a la consola de EC2 mediante aws cli 
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Pasos para ejecutar proyecto
+- Clonar el repositorio completo y navegar a la raíz de ec2-instancia
+- Instalar las dependencias: npm install
+- En el archivo lib/ec2-instancia-stack.ts cambiar la variable miIP por la ip del equipo local
+- Construir el proyecto: npm run build
+- Desplegar el stack: cdk deploy
